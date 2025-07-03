@@ -1,8 +1,8 @@
-# Online-Payments-Fraud-Detection-with-Machine-Learning
+# Fraud-Detection-System-using-python
 
 The introduction of online payment systems has helped a lot in the ease of payments. But, at the same time, it increased in payment frauds. Online payment frauds can happen with anyone using any payment system, especially while making payments using a credit card. That is why detecting online payment fraud is very important for credit card companies to ensure that the customers are not getting charged for the products and services they never paid. 
 
-## Online Payments Fraud Detection with Machine Learning
+## Fraud-Detection-System-using-python
 To identify online payment fraud with machine learning, we need to train a machine learning model for classifying fraudulent and non-fraudulent payments. For this, we need a dataset containing information about online payment fraud, so that we can understand what type of transactions lead to fraud. For this task, I collected a dataset from Kaggle, which contains historical information about fraudulent transactions which can be used to detect fraud in online payments. Below are all the columns from the dataset I’m using here:
 
 * <font color='DarkOrange'>step</font> : represents a unit of time where 1 step equals 1 hour
@@ -16,7 +16,7 @@ To identify online payment fraud with machine learning, we need to train a machi
 * <font color='DarkKhaki'>newbalanceDest</font> : the new balance of recipient after the transaction
 * <font color='red'>isFraud</font> : fraud transaction
 
-## Online Payments Fraud Detection using Python
+## Fraud-Detection-System-using-python
 
 importing the necessary Python libraries and the [dataset](https://www.kaggle.com/ealaxi/paysim1/download) we need for this task:
 ```
@@ -79,7 +79,7 @@ data["isFraud"] = data["isFraud"].map({0: "No Fraud", 1: "Fraud"})
 
 ```
 
-### Online Payments Fraud Detection Model
+### Fraud-Detection-System-using-python
 
 Now let’s train a classification model to classify fraud and non-fraud transactions. Before training the model, I will split the data into training and test sets:
 
@@ -121,4 +121,4 @@ loading the model
 ```                            
 model = pickle.load(open("model.pkl", "rb"))
 ```
-Refrence : The code in this project was inspired by the [article](https://thecleverprogrammer.com/author/amankharwal/.) Online Payments Fraud Detection with Machine Learning.
+Refrence : The code in this project was inspired by the [article](https://thecleverprogrammer.com/author/amankharwal/.) Fraud-Detection-System-using-python
